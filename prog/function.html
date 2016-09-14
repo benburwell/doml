@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="../lib/doml.js"></script>
+		<script>
+			Doml.runOnLoad();
+		</script>
+		<link type="stylesheet" href="../lib/style.css">
+	</head>
+	<body>
+		<span class="statement-sequence">
+			<span class="assign" data-name="myFunc">
+				<span class="function" data-args="stringToPrint,val1,val2">
+					<span class="print">
+						<span class="variable" data-name="stringToPrint"></span>
+						<span class="bin-op" data-op="+">
+							<span class="variable" data-name="val1"></span>
+							<span class="variable" data-name="val2"></span>
+						</span>
+					</span>
+				</span>
+			</span>
+
+			<span class="call" data-name="myFunc">
+				<span class="constant" data-val="hello, world!" data-type="string"></span>
+				<span class="constant" data-val="3.5" data-type="number"></span>
+				<span class="constant" data-val="7" data-type="number"></span>
+			</span>
+		</span>
+	</body>
+</html>
