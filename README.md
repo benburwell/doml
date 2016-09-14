@@ -10,3 +10,8 @@ After cloning the repository, open up any of the files found in the `prog` direc
 
 At this point, it is extremely simple and undocumented. All statements are executed in a global context, and are implemented in `./lib/statements.js`. Binary operators are implemented in `./lib/binops.js`. A rudimentary type system currently consisting of `string`, `number`, and `boolean` are mapped to native JavaScript types for evaluation.
 
+## Online Example
+
+* [Euclidean Algorithm](https://cdn.rawgit.com/benburwell/doml/master/prog/euclideanAlgorithm.html)
+* [Simple `While` Loop](https://cdn.rawgit.com/benburwell/doml/master/prog/simpleWhileLoop.html)
+
