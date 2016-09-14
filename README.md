@@ -8,7 +8,7 @@ After cloning the repository, open up any of the files found in the `prog` direc
 
 ## About the language
 
-At this point, it is extremely simple and undocumented. All statements are executed in a global context, and are implemented in `./lib/statements.js`. Binary operators are implemented in `./lib/binops.js`. A rudimentary type system currently consisting of `string`, `number`, and `boolean` are mapped to native JavaScript types for evaluation.
+At this point, it is extremely simple and undocumented. All statements are executed in a global context. A rudimentary type system currently consisting of `string`, `number`, and `boolean` are mapped to native JavaScript types for evaluation.
 
 ## Online Example
 
