@@ -4,7 +4,7 @@ This is a little experiment around using the DOM to represent an [AST](https://e
 
 Clearly, this is not a performant way to do things, but it is fun :)
 
-After cloning the repository, open up any of the `.doml` files found in the `prog` directory in your browser -- you should see it represented visually, and you'll see any output logged to the console.
+After cloning the repository, open up any of the files found in the `prog` directory in your browser -- you should see it represented visually, and you'll see any output logged to the console.
 
 ## About the language
 
