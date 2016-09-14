@@ -5,7 +5,7 @@
 		<script>
 			Doml.runOnLoad();
 		</script>
-		<link type="stylesheet" href="../lib/style.css">
+		<link rel="stylesheet" href="../lib/style.css">
 	</head>
 	<body>
 		<span class="statement-sequence">
@@ -21,10 +21,13 @@
 				</span>
 			</span>
 
-			<span class="call" data-name="myFunc">
-				<span class="constant" data-val="hello, world!" data-type="string"></span>
-				<span class="constant" data-val="3.5" data-type="number"></span>
-				<span class="constant" data-val="7" data-type="number"></span>
+			<span class="repeat" data-iteration="loopTime">
+				<span class="constant" data-val="5" data-type="number"></span>
+				<span class="call" data-name="myFunc">
+					<span class="constant" data-val="hello, world!" data-type="string"></span>
+					<span class="constant" data-val="3.5" data-type="number"></span>
+					<span class="variable" data-name="loopTime"></span>
+				</span>
 			</span>
 		</span>
 	</body>

@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+	<head>
+		<script type="text/javascript" src="../lib/doml.js"></script>
+		<script>
+			Doml.runOnLoad();
+		</script>
+		<link rel="stylesheet" href="../lib/style.css">
+	</head>
+	<body>
+		<span class="statement-sequence">
+			<span class="assign" data-name="EuclideanAlgorithm">
+				<span class="function" data-args="a,b">
+					<span class="statement-sequence">
+						<span class="while">
+							<span class="compare" data-op="!=">
+								<span class="variable" data-name="b"></span>
+								<span class="constant" data-val="0" data-type="number"></span>
+							</span>
+
+							<span class="branch">
+								<span class="compare" data-op=">">
+									<span class="variable" data-name="a"></span>
+									<span class="variable" data-name="b"></span>
+								</span>
+
+								<span class="assign" data-name="a">
+									<span class="bin-op" data-op="-">
+										<span class="variable" data-name="a"></span>
+										<span class="variable" data-name="b"></span>
+									</span>
+								</span>
+
+								<span class="assign" data-name="b">
+									<span class="bin-op" data-op="-">
+										<span class="variable" data-name="b"></span>
+										<span class="variable" data-name="a"></span>
+									</span>
+								</span>
+							</span>
+						</span>
+
+						<span class="branch">
+							<span class="compare" data-op="==">
+								<span class="variable" data-name="a"></span>
+								<span class="constant" data-val="1" data-type="number"></span>
+							</span>
+							<span class="print">
+								<span class="constant" data-val="Relatively prime" data-type="string"></span>
+							</span>
+							<span class="print">
+								<span class="constant" data-val="Found GCD" data-type="string"></span>
+								<span class="variable" data-name="a"></span>
+							</span>
+						</span>
+					</span>
+				</span>
+			</span>
+
+			<span class="input" data-prompt="Enter the first value" data-name="val1" data-type="number"></span>
+			<span class="input" data-prompt="Enter the second value" data-name="val2" data-type="number"></span>
+
+			<span class="call" data-name="EuclideanAlgorithm">
+				<span class="variable" data-name="val1"></span>
+				<span class="variable" data-name="val2"></span>
+			</span>
+		</span>
+	</body>
+</html>

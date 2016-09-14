@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="../lib/doml.js"></script>
+		<script>
+			Doml.runOnLoad();
+		</script>
+		<link rel="stylesheet" href="../lib/style.css">
+	</head>
+	<body>
+		<span class="statement-sequence">
+			<span class="assign" data-name="greet">
+				<span class="function" data-args="name">
+					<span class="print">
+						<span class="constant" data-val="Hello," data-type="string"></span>
+						<span class="variable" data-name="name"></span>
+					</span>
+				</span>
+			</span>
+
+			<span class="input" data-prompt="What is your name?" data-name="personToGreet" data-type="string"></span>
+
+			<span class="call" data-name="greet">
+				<span class="variable" data-name="personToGreet"></span>
+			</span>
+		</span>
+	</body>
+</html>
