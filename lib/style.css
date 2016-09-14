@@ -1,0 +1,125 @@
+body {
+	font-family: monospace;
+}
+
+span {
+	display: flex;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+var {
+	font-style: normal;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+.statement-sequence {
+	display: block;
+	border: 2px solid #666;
+}
+
+.statement-sequence > span {
+	background-color: yellow;
+	padding: 3px;
+	margin: 3px;
+	border: 1px dotted #666;
+}
+
+.assign {
+	color: blue;
+}
+
+.assign::before {
+	content: 'Variable Assignment';
+	color: darkmagenta;
+	order: 1;
+}
+
+.assign::after {
+	content: '=';
+	color: black;
+	order: 3;
+}
+
+.assign > *:nth-child(1) {
+	order: 4;
+}
+
+.assign > *:nth-child(2) {
+	order: 2;
+}
+
+.variable {
+	color: blue;
+}
+
+.constant {
+	color: red;
+}
+
+.while {
+	flex-direction: column;
+}
+
+.while > span {
+	margin-left: 20px;
+}
+
+.while::before {
+	content: 'While';
+	color: darkmagenta;
+}
+
+.return > span {
+	order: 2;
+}
+
+.return::after {
+	content: 'Return';
+	color: darkmagenta;
+	order: 1;
+}
+
+.compare::before {
+	content: 'Comparison';
+	color: darkmagenta;
+	order: 1;
+}
+
+.compare > *:nth-child(1) {
+	order: 2;
+}
+
+.compare > *:nth-child(3) {
+	order: 3;
+}
+
+.compare > *:nth-child(2) {
+	order: 4;
+}
+
+.branch {
+	flex-direction: column;
+}
+
+.branch::before {
+	content: 'Logical Branch';
+	color: darkmagenta;
+}
+
+.branch > span {
+	margin-left: 20px;
+}
+
+.bin-op > span:nth-child(1) {
+	order: 1;
+}
+
+.bin-op > span:nth-child(2) {
+	order: 3;
+}
+
+.bin-op > var {
+	order: 2;
+}

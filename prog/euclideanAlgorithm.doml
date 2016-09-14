@@ -1,0 +1,66 @@
+<!-- vim: set filetype=html: -->
+<!doctype html>
+<html>
+	<head>
+		<script type="text/javascript" src="../lib/util.js"></script>
+		<script type="text/javascript" src="../lib/types.js"></script>
+		<script type="text/javascript" src="../lib/binops.js"></script>
+		<script type="text/javascript" src="../lib/statements.js"></script>
+		<script type="text/javascript" src="../lib/readability.js"></script>
+		<script type="text/javascript" src="../lib/run.js"></script>
+		<link rel="stylesheet" href="../lib/style.css">
+	</head>
+	<body>
+		<span class="statement-sequence">
+			<span class="assign" data-name="a">
+				<span class="constant" data-val="2250256" data-type="number"></span>
+			</span>
+
+			<span class="assign" data-name="b">
+				<span class="constant" data-val="8273" data-type="number"></span>
+			</span>
+
+			<span class="while">
+				<span class="compare" data-op="!=">
+					<span class="variable" data-name="b"></span>
+					<span class="constant" data-val="0" data-type="number"></span>
+				</span>
+
+				<span class="branch">
+					<span class="compare" data-op=">">
+						<span class="variable" data-name="a"></span>
+						<span class="variable" data-name="b"></span>
+					</span>
+
+					<span class="assign" data-name="a">
+						<span class="bin-op" data-op="-">
+							<span class="variable" data-name="a"></span>
+							<span class="variable" data-name="b"></span>
+						</span>
+					</span>
+
+					<span class="assign" data-name="b">
+						<span class="bin-op" data-op="-">
+							<span class="variable" data-name="b"></span>
+							<span class="variable" data-name="a"></span>
+						</span>
+					</span>
+				</span>
+			</span>
+
+			<span class="branch">
+				<span class="compare" data-op="==">
+					<span class="variable" data-name="a"></span>
+					<span class="constant" data-val="1" data-type="number"></span>
+				</span>
+				<span class="print">
+					<span class="constant" data-val="Relatively prime" data-type="string"></span>
+				</span>
+				<span class="print">
+					<span class="constant" data-val="Found GCD" data-type="string"></span>
+					<span class="variable" data-name="a"></span>
+				</span>
+			</span>
+		</span>
+	</body>
+</html>

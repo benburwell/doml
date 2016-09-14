@@ -1,0 +1,38 @@
+<!-- vim: set filetype=html: -->
+<!doctype html>
+<html>
+	<head>
+		<script type="text/javascript" src="../lib/util.js"></script>
+		<script type="text/javascript" src="../lib/types.js"></script>
+		<script type="text/javascript" src="../lib/binops.js"></script>
+		<script type="text/javascript" src="../lib/statements.js"></script>
+		<script type="text/javascript" src="../lib/readability.js"></script>
+		<script type="text/javascript" src="../lib/run.js"></script>
+		<link rel="stylesheet" href="../lib/style.css">
+	</head>
+	<body>
+		<span class="statement-sequence">
+			<span class="assign" data-name="x">
+				<span class="constant" data-val="0" data-type="number"></span>
+			</span>
+
+			<span class="while">
+				<span class="compare" data-op="<">
+					<span class="variable" data-name="x"></span>
+					<span class="constant" data-val="100" data-type="number"></span>
+				</span>
+
+				<span class="assign" data-name="x">
+					<span class="bin-op" data-op="+">
+						<span class="variable" data-name="x"></span>
+						<span class="constant" data-val="1" data-type="number"></span>
+					</span>
+				</span>
+			</span>
+
+			<span class="return">
+				<span class="variable" data-name="x"></span>
+			</span>
+		</span>
+	</body>
+</html>
