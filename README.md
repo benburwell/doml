@@ -13,5 +13,5 @@ At this point, it is extremely simple and undocumented. All statements are execu
 ## Online Example
 
 * [Euclidean Algorithm](https://cdn.rawgit.com/benburwell/doml/master/prog/euclideanAlgorithm.html)
-* [Simple `While` Loop](https://cdn.rawgit.com/benburwell/doml/master/prog/simpleWhileLoop.html)
-
+* [Simple `while` loop](https://cdn.rawgit.com/benburwell/doml/master/prog/simpleWhileLoop.html)
+* [Defining and calling a function](https://cdn.rawgit.com/benburwell/doml/master/prog/function.html)
